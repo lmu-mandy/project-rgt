@@ -1,8 +1,8 @@
-# User Guide
+# STEM Based TED Talk Generation
 ## Dataset
 The dataset that was used for this project can be found on Kaggle: https://www.kaggle.com/miguelcorraljr/ted-ultimate-dataset. This dataset comes in several different languages, however we only used the English version which is titled `ted_talks_en.csv`.
 
-## Steps to run the GPT-2 model
+## How to run the GPT-2 model
 1. Clone this repository by running the following command: `git clone https://github.com/lmu-mandy/project-rgt`.
 2. Open the `gpt_2.py` script and open the link which is located at the top of the file. This will open the Google Colab notebook.
 3. Once you are in Google Colab, make a copy of the notebook, unless you do not intend to change anything in the code.
