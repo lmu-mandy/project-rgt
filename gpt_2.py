@@ -7,6 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1pk8NBEieWeEqn8d7zsGJDYwzazShkEBm
 """
 
+# only need to run this line once
+!pip install simpletransformers
+
+prompts = [
+    "Hello everyone, today I'll be discussing"
+    # enter your own prompts here
+]
+
 # packages needed to run this code
 import pandas as pd
 import numpy as np
@@ -53,11 +61,6 @@ transformers_logger.setLevel(logging.WARNING)
 
 model = LanguageGenerationModel("gpt2", "gpt2", args={"max_length": 300})
 
-prompts = [
-    "Hello everyone, today I'll be discussing"
-    # enter your own prompts here
-]
-
 # print out the prompt and generated text
 for prompt in prompts:
     generated = model.generate(prompt, verbose=False)
@@ -90,11 +93,6 @@ model.eval_model("test.txt")
 # generate text using the trained model
 text_generator = LanguageGenerationModel("gpt2", "./outputs", args={"max_length": 300})
 
-prompts = [
-    "Hello everyone, today I'll be discussing"
-    # enter your own prompts here
-]
-
 # print out the prompt and generated text
 for prompt in prompts:
     generated = text_generator.generate(prompt, verbose=False)
@@ -103,4 +101,3 @@ for prompt in prompts:
     print('')
     print('Generated text:', generated)
     print('')
-
