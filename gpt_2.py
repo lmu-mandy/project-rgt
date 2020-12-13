@@ -54,7 +54,6 @@ transformers_logger.setLevel(logging.WARNING)
 model = LanguageGenerationModel("gpt2", "gpt2", args={"max_length": 300})
 
 prompts = [
-    "Machine learning is",
     "Hello everyone, today I'll be discussing"
     # enter your own prompts here
 ]
